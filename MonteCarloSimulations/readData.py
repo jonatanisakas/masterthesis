@@ -20,7 +20,7 @@ class ReadData():
             
     def readCsv(self):
         self.df = pd.read_csv(self.path, self.header, self.index_col, engine='python')
-        self.df['T'] = self.calculateTimeToMaturity()
+        #self.df['T'] = self.calculateTimeToMaturity()
         
         return self.df
         
